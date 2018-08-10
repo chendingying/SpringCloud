@@ -27,38 +27,50 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="java" value="9" />
           <entry key="tml" value="1" />
           <entry key="xml" value="9" />
-          <entry key="yml" value="6" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="9" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="TML" value="1" />
           <entry key="XML" value="9" />
-          <entry key="YAML" value="6" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="327" />
           <entry key="xml" value="15" />
-          <entry key="yml" value="133" />
+          <entry key="yml" value="134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="327" />
           <entry key="XML" value="15" />
-          <entry key="YAML" value="133" />
+          <entry key="YAML" value="134" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,12 +90,12 @@
         <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/src/main/java/com/spring/cloud/service/ServiceHiApplication.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-ribbon/src/main/java/com/spring/cloud/ribbon/ServiceRibbonApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-ribbon/src/main/java/com/spring/cloud/ribbon/web/HelloControler.java" />
         <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/src/main/java/com/spring/cloud/feign/web/HiController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -108,12 +120,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="492" />
     <option name="y" value="275" />
     <option name="width" value="1228" />
     <option name="height" value="776" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -144,10 +157,19 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533882800816" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533882803986" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\spring-cloud" />
+      <recent name="F:\spring-cloud\spring-cloud-client\spring-cloud-feign\src\main\java\com\spring\cloud\feign" />
+      <recent name="F:\spring-cloud\spring-cloud-client\spring-cloud-feign\src\main\resources" />
+      <recent name="F:\spring-cloud\spring-cloud-client\spring-cloud-ribbon\src\main\java\com\spring\cloud\ribbon" />
+      <recent name="F:\spring-cloud\spring-cloud-client\spring-cloud-ribbon\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,15 +241,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533881393135</updated>
-      <workItem from="1533881396265" duration="1337000" />
+      <workItem from="1533881396265" duration="2162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1337000" />
+    <option name="totallyTimeSpent" value="2162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -235,7 +258,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2408313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2408313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
@@ -243,17 +266,17 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29147983" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45067266" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="right" id="Maven Projects" visible="true" weight="0.3294621" />
+      <window_info anchor="right" id="Maven Projects" weight="0.3294621" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
@@ -330,13 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -440,6 +456,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
