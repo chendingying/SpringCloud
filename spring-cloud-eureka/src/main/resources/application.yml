@@ -4,8 +4,16 @@ server:
 eureka:
   instance:
     hostname: localhost
+    prefer-ip-address: true
+  datacenter: SpringCloud   # 修改 http://localhost:8761 地址 Eureka 首页上面 System Status 的 Data center 显示信息
+  environment: Test         # 修改 http://localhost:8761 地址 Eureka 首页上面 System Status 的 Environment 显示信息
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    healthcheck:  # 健康检查
+      enabled: true
+security:
+  basic:
+    enabled: false #取消登陆验证

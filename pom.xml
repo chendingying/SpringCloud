@@ -13,6 +13,10 @@
         <module>spring-cloud-client</module>
         <module>spring-cloud-service</module>
         <module>spring-cloud-common</module>
+        <module>spring-cloud-sidecar</module>
+        <module>spring-cloud-zuul</module>
+        <module>spring-cloud-upload-client</module>
+        <module>spring-cloud-upload-server</module>
     </modules>
 
 

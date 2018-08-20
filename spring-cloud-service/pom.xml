@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-service-test</module>
+        <module>spring-cloud-service-advertising</module>
+        <module>spring-cloud-service-swagger</module>
     </modules>
 
 

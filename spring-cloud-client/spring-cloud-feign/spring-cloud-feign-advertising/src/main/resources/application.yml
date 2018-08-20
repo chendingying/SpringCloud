@@ -1,0 +1,29 @@
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://61.160.207.86:2221/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feign
+  output:
+    ansi:
+      enabled: always
+feign:
+  compression:
+    request:
+      mime-types: text/xml;application/xml;application/json
+      min-request-size: 2048
+    response:
+      enabled:true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE

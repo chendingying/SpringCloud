@@ -5,7 +5,11 @@
 
 
     <groupId>com.spring.cloud</groupId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring-cloud-feign-advertising</module>
+    </modules>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-cloud-feign</artifactId>
 
@@ -40,6 +44,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- 使用Apache HttpClient替换Feign原生httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+            <version>8.18.0</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
