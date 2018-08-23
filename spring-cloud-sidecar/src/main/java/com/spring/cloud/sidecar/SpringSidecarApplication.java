@@ -12,11 +12,11 @@ import org.springframework.cloud.netflix.sidecar.EnableSidecar;
  * @EnableSidecar --> { @EnableCircuitBreaker、@EnableDiscoveryClient、@EnableZuulProxy } 包含了 eureka 客户端注解，同时也包含了 Hystrix 断路器模块注解，还包含了 zuul API网关模块。
  */
 @EnableSidecar
-//@EnableEurekaClient
 @SpringBootApplication
 public class SpringSidecarApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringSidecarApplication.class, args);
+		System.out.println("【【【【【【 SideCar 微服务 】】】】】】已启动.");
 	}
 }

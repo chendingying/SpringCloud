@@ -12,5 +12,6 @@ public class SpringZuulApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringZuulApplication.class, args);
+		System.out.println("【【【【【【 Zuul 微服务 】】】】】】已启动.");
 	}
 }

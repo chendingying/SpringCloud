@@ -2,19 +2,22 @@ spring:
   application:
     name: spring-sidecar
 server:
-  port: 8210
+  port: 8212
 eureka:
   instance:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+#      defaultZone: http://222.73.239.52:2221/eureka61.160.207.86
+       defaultZone: http://61.160.207.86:2221/eureka
     healthcheck:  # 健康检查
       enabled: true
 
 #####################################################################################################
 # 异构微服务的配置， port 代表异构微服务的端口；health-uri 代表异构微服务的操作链接地址
 sidecar:
-  port: 80
-  health-uri: http://www.gdchuangai.net/mall/health.json    #此处为非java服务端的一个接口地址，返回必须为 {"status": "UP"}，用着eureka监听
+  port: 82
+  health-uri: http://localhost:82/health.json    #此处为非java服务端的一个接口地址，返回必须为 {"status": "UP"}，用着eureka监听
 #####################################################################################################
+
+##Sidecar应用程序必须和第三方应用程序运行在同一台电脑上，也就是说他们之间是localhost，不能是ip访问（官网未提及）
