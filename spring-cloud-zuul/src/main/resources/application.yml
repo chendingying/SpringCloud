@@ -7,10 +7,11 @@ server:
 eureka:
   client:
     service-url:
-#      defaultZone: http://222.73.239.52:2221/eureka61.160.207.86
+#      defaultZone: http://222.73.239.52:2221/eureka
        defaultZone: http://61.160.207.86:2221/eureka
     healthcheck:  # 健康检查
       enabled: true
+    prefer-ip-address: true     # 访问的路径变为IP地址
 
 #  调用spring-sidecar 实现轮询调用
 zuul:
@@ -18,3 +19,27 @@ zuul:
      api-1:
        path: /**
        serviceId: spring-sidecar
+       stripPrefix: true
+       sensitiveHeaders: Cookie,Set-Cookie,Authorization  # 敏感头部信息设置
+
+#路由超时，即socket超时设置
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+
+#熔断器超时
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000

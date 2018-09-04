@@ -9,6 +9,7 @@
         <module name="spring-cloud-common" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-feign-advertising" />
+        <module name="spring-cloud-interface" />
         <module name="spring-cloud-ribbon" />
         <module name="spring-cloud-service-advertising" />
         <module name="spring-cloud-service-swagger" />
@@ -19,5 +20,14 @@
         <module name="spring-cloud-zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-cloud-auth" target="1.5" />
+      <module name="spring-cloud-auth-client" target="1.5" />
+      <module name="spring-cloud-auth-common" target="1.5" />
+      <module name="spring-cloud-auth-server" target="1.8" />
+      <module name="spring-cloud-gate" target="1.5" />
+      <module name="spring-cloud-gate-gateway-v2" target="1.5" />
+      <module name="spring-cloud-service-admin" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -17,7 +17,11 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-upload-client</module>
         <module>spring-cloud-upload-server</module>
+        <module>spring-cloud-interface</module>
     </modules>
 
 
+    <properties>
+        <version.org.sfl4j>1.7.2</version.org.sfl4j>
+    </properties>
 </project>

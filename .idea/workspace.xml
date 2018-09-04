@@ -1,8 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e505a18f-6e9a-43ae-8088-3cd63d021241" name="Default Changelist" comment="">
+    <list default="true" id="e505a18f-6e9a-43ae-8088-3cd63d021241" name="Default Changelist" comment="实现spring cloud 异构调用php">
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/biz/BaseBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/constant/CommonConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/constant/RestCodeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/constant/UserConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/context/BaseContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/ClientForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/ClientInvalidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/ClientTokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/UserInvalidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/UserTokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/ListRestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/ObjectRestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/TableResultResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/auth/TokenErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/auth/TokenForbiddenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/rest/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/service/impl/BaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/ClientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/EntityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/ReflectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/StringHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/TreeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/UUIDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/vo/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/web/ParameterRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-interface/src/main/java/com/spring/cloud/api/vo/authority/PermissionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-interface/src/main/java/com/spring/cloud/api/vo/log/LogInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-interface/src/main/java/com/spring/cloud/api/vo/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-interface/src/main/java/com/spring/cloud/api/vo/search/IndexObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-interface/src/main/java/com/spring/cloud/api/vo/user/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-eureka/target/classes/com/spring/cloud/eureka/EurekaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-eureka/target/classes/com/spring/cloud/eureka/EurekaServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-swagger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-sidecar/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-sidecar/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-upload-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-upload-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-upload-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-upload-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -22,6 +71,14 @@
     <ignored path="$PROJECT_DIR$/spring-cloud-sidecar/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-upload-server/target/" />
     <ignored path="$PROJECT_DIR$/spring-cloud-upload-client/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-auth/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-common/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-interface/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-gate/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +103,25 @@
     <session id="1037368329">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,17 +132,17 @@
           <entry key="ftl" value="75" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="3" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="891" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="1042" />
           <entry key="js" value="3" />
           <entry key="json" value="3" />
           <entry key="log" value="1" />
-          <entry key="md" value="9" />
+          <entry key="md" value="12" />
           <entry key="properties" value="41" />
-          <entry key="sql" value="2" />
+          <entry key="sql" value="4" />
           <entry key="tml" value="1" />
-          <entry key="xml" value="80" />
-          <entry key="yml" value="74" />
+          <entry key="xml" value="128" />
+          <entry key="yml" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -91,40 +151,40 @@
           <entry key="CSS" value="15" />
           <entry key="FTL" value="75" />
           <entry key="HTML" value="3" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="891" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="1042" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="3" />
-          <entry key="Markdown" value="9" />
+          <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="41" />
-          <entry key="SQL" value="2" />
+          <entry key="SQL" value="4" />
           <entry key="TML" value="1" />
-          <entry key="XML" value="80" />
-          <entry key="YAML" value="74" />
+          <entry key="XML" value="128" />
+          <entry key="YAML" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
           <entry key="ftl" value="551" />
-          <entry key="java" value="6509" />
+          <entry key="java" value="6537" />
           <entry key="md" value="712" />
           <entry key="properties" value="436" />
           <entry key="txt" value="87" />
-          <entry key="xml" value="109" />
-          <entry key="yml" value="946" />
+          <entry key="xml" value="246" />
+          <entry key="yml" value="1217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="FTL" value="551" />
-          <entry key="JAVA" value="6509" />
+          <entry key="JAVA" value="6537" />
           <entry key="Markdown" value="712" />
           <entry key="PLAIN_TEXT" value="92" />
           <entry key="Properties" value="436" />
-          <entry key="XML" value="109" />
-          <entry key="YAML" value="946" />
+          <entry key="XML" value="246" />
+          <entry key="YAML" value="1217" />
         </counts>
       </usages-collector>
     </session>
@@ -135,31 +195,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="256">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <entry file="file://$PROJECT_DIR$/spring-cloud.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="144">
+                <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="208">
-                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -169,17 +234,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>template</find>
-      <find>static.</find>
       <find>assets</find>
       <find>ctx</find>
       <find>jpa</find>
@@ -208,6 +271,8 @@
       <find>logger</find>
       <find>AbstractRibbonCommand</find>
       <find>getHystrixTimeout</find>
+      <find>org.slf4j</find>
+      <find>junit</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -220,44 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceCommercial.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceInformation.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceNews.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServicePointRule.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceResource.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceRole.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/impl/SchedualServiceUserImpl.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/web/UserController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceUser.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-sidecar/src/main/java/com/spring/cloud/sidecar/SpringZuulApplication.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-sidecar/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/entity/Information.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/controller/admin/system/CommercialController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/controller/admin/system/InformationController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/controller/admin/system/NewsController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/templates/admin/news/form2.ftl.html" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/templates/admin/news/form2.ftl" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/controller/admin/system/UserController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/templates/admin/account/form.ftl" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/web/IndexController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/service/SchedualServiceIndex.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/resources/templates/admin/index.ftl" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/templates/admin/welcome.ftl" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/controller/admin/LoginController.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/shiro/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/FeignConfiguration.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-client/spring-cloud-feign/spring-cloud-feign-advertising/src/main/java/com/spring/cloud/advertising/FeignAdvertisingApplication.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/RibbonRoutingFilter.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-server/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-server/src/main/java/com/spring/cloud/upload/server/Application.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-client/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-client/src/main/java/com/spring/cloud/upload/client/Application.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-client/src/main/java/com/spring/cloud/upload/client/UploadService.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-upload-client/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/templates/admin/index.ftl" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/FallBackHandler.java" />
@@ -265,12 +292,50 @@
         <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/SpringZuulApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/java/com/spring/cloud/eureka/EurekaServerApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-sidecar/src/main/java/com/spring/cloud/sidecar/SpringSidecarApplication.java" />
-        <option value="$PROJECT_DIR$/spring-cloud-sidecar/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/Base64.java" />
         <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/AuthorizedRequestFilter.java" />
         <option value="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/constant/CommonConstants.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/msg/ObjectRestResponse.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/UUIDUtils.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/vo/TreeNode.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/web/ParameterRequestWrapper.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/service/impl/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/rest/BaseController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/biz/BaseBiz.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/ClientTokenException.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/UserTokenException.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/UserInvalidException.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/handler/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/ClientInvalidException.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/context/BaseContextHandler.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-sidecar/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/exception/auth/ClientForbiddenException.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-upload-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-interface/src/main/java/com/spring/cloud/api/vo/search/IndexObject.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/EnableAceAuthClient.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/config/FeignOkHttpConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-upload-client/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/exception/JwtTokenExpiredException.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-common/src/main/java/com/spring/cloud/auth/common/constatns/CommonConstants.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/service/AuthClientService.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/vo/MenuTree.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-gate/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/fallback/UserServiceFallback.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/configuration/AutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/feign/ServiceAuthFeign.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/interceptor/OkHttpTokenInterceptor.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -291,23 +356,13 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-cloud-sidecar" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-cloud-sidecar" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="125" />
-    <option name="y" value="190" />
+    <option name="x" value="737" />
+    <option name="y" value="33" />
     <option name="width" value="1228" />
     <option name="height" value="776" />
   </component>
@@ -367,6 +422,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -378,8 +435,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,14 +447,14 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535074562286" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536027938059" />
     <property name="last_opened_file_path" value="F:/ace-security" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29310346" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.28189912" />
   </component>
   <component name="RecentsManager">
@@ -407,18 +462,18 @@
       <recent name="F:\spring-cloud\spring-cloud-service\spring-cloud-service-advertising\src\main\resources\static\assets" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.spring.cloud.zuul" />
-      <recent name="com.spring.cloud.sidecar" />
-      <recent name="com.spring.cloud.advertising.shiro" />
-      <recent name="com.spring.cloud.advertising.web" />
-      <recent name="com.spring.cloud.advertising.config" />
+      <recent name="com.spring.cloud.auth.client" />
+      <recent name="com.spring.cloud.common.web" />
+      <recent name="com.spring.cloud.common.vo" />
+      <recent name="com.spring.cloud.common.rest" />
+      <recent name="com.spring.cloud.common.handler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\spring-cloud\SpringCloud" />
-      <recent name="F:\spring-cloud\spring-cloud-sidecar\src\main\resources" />
-      <recent name="F:\spring-cloud\spring-cloud-zuul\src\main\resources" />
-      <recent name="F:\spring-cloud\spring-cloud-client\spring-cloud-feign\spring-cloud-feign-advertising\src\main\java\com\spring\cloud\advertising" />
-      <recent name="F:\spring-cloud\spring-cloud-client\spring-cloud-feign\spring-cloud-feign-advertising\src\main\resources\static\assets" />
+      <recent name="F:\spring-cloud\spring-cloud-gate\spring-cloud-gate-gateway-v2\src\main\resources" />
+      <recent name="F:\spring-cloud\spring-cloud-gate\spring-cloud-gate-gateway-v2\src\main\java\com\spring\cloud\gate\gateway\v2" />
+      <recent name="F:\spring-cloud\spring-cloud-service\spring-cloud-service-admin\src\main\resources" />
+      <recent name="F:\spring-cloud\spring-cloud-service\spring-cloud-service-admin\src\main\java\com\spring\cloud\service\admin" />
+      <recent name="F:\spring-cloud\spring-cloud-service\spring-cloud-service-admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,7 +488,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringZuulApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration name="AdminBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-service-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.cloud.service.admin.AdminBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <module name="spring-cloud-service-advertising" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.cloud.advertising.Application" />
@@ -555,6 +617,7 @@
       <item itemvalue="Spring Boot.UploadServerApplication" />
       <item itemvalue="Spring Boot.FeignAdvertisingApplication" />
       <item itemvalue="Spring Boot.SwaggerApplication" />
+      <item itemvalue="Spring Boot.AdminBootstrap" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -583,7 +646,11 @@
       <workItem from="1535074610445" duration="74000" />
       <workItem from="1535074722777" duration="44000" />
       <workItem from="1535353255719" duration="257000" />
-      <workItem from="1535355946298" duration="502000" />
+      <workItem from="1535355946298" duration="1910000" />
+      <workItem from="1535425676933" duration="12878000" />
+      <workItem from="1535767829357" duration="946000" />
+      <workItem from="1535966111495" duration="2854000" />
+      <workItem from="1536024175357" duration="2166000" />
     </task>
     <task id="LOCAL-00001" summary="实现spring cloud 异构调用php">
       <created>1534989575355</created>
@@ -592,11 +659,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534989575355</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="实现spring cloud 异构调用php">
+      <created>1535356676411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535356676411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175046000" />
+    <option name="totallyTimeSpent" value="195298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,9 +683,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.2096577" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.21943766" />
       <window_info id="Structure" order="1" sideWeight="0.50088185" side_tool="true" weight="0.2775061" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -628,17 +701,17 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32996634" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32996634" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32996634" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.23681258" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.1694725" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32996634" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.33782268" />
+      <window_info anchor="bottom" id="Version Control" order="12" visible="true" weight="0.2996633" />
       <window_info anchor="bottom" id="Event Log" order="13" weight="0.32996634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.20354523" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.13447432" />
       <window_info anchor="right" id="Database" order="6" weight="0.3294621" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -750,333 +823,233 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/import.sql">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/configuration/AuthConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/biz/ClientBiz.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/configuration/FeignConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/entity/ClientService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/feign/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/configuration/ClientConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/mapper/ClientMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/bean/ClientInfo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/util/client/ClientTokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/java/com/spring/cloud/auth/server/service/AuthClientService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-server/src/main/resources/mapper/ClientMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        <state relative-caret-position="2304">
+          <caret line="144" column="48" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/repository/org/springframework/cloud/spring-cloud-netflix-core/1.3.0.RC1/spring-cloud-netflix-core-1.3.0.RC1.jar!/org/springframework/cloud/netflix/zuul/filters/route/support/AbstractRibbonCommand.class">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/db/init.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/rest/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/rest/GateLogController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/config/WebConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/vo/GroupTree.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/entity/ResourceAuthority.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/biz/ElementBiz.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/entity/GateLog.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/java/com/spring/cloud/service/admin/vo/MenuTree.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-admin/src/main/resources/builder/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+        <state relative-caret-position="1520">
+          <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/java/jdk-8/src.zip!/java/time/LocalDateTime.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/util/DBLog.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/filter/AccessGatewayFilter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/feign/ILogService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/GatewayServerBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/feign/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/config/RouteConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/java/com/spring/cloud/gate/gateway/v2/fallback/UserServiceFallback.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-gate/spring-cloud-gate-gateway-v2/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+        <state relative-caret-position="105">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/FallBackHandler.java" />
-    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/annotation/IgnoreClientToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="176">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-sidecar/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/annotation/IgnoreUserToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="71" selection-end-column="19" />
+        <state relative-caret-position="176">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-upload-client/src/main/java/com/spring/cloud/upload/client/Application.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/config/FeignOkHttpConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="192">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-upload-client/src/main/java/com/spring/cloud/upload/client/UploadService.java">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/config/ServiceAuthConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-upload-client/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/target/classes/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-swagger/src/main/java/com/spring/cloud/swagger/controller/DemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/AESUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-128">
+        <state relative-caret-position="144">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/DateEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/JsonResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-128">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-common/src/main/java/com/spring/cloud/common/utils/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/java/com/spring/cloud/eureka/EurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/intercepter/CommonIntercepter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/listener/ApplicationEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/shiro/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/shiro/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-565">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/shiro/ShiroManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/FreeMarkerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/entity/support/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/entity/Information.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/service/impl/CommercialServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/service/impl/InformationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/service/impl/PointRuleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="45" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-upload-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-upload-server/src/main/java/com/spring/cloud/upload/server/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-test/src/main/java/com/spring/cloud/service/ServiceHiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-sidecar/src/main/java/com/spring/cloud/sidecar/SpringSidecarApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/Base64.java" />
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/AuthorizedRequestFilter.java" />
-    <entry file="file://$PROJECT_DIR$/spring-cloud-sidecar/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/java/com/spring/cloud/zuul/SpringZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/common/Constats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/common/GenEntityMysql.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/common/JsonResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/java/com/spring/cloud/advertising/vo/ZtreeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/config/UserAuthConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/configuration/AutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/exception/JwtIllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/exception/JwtSignatureException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/exception/JwtTokenExpiredException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/feign/ServiceAuthFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/interceptor/ServiceAuthRestInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/src/main/java/com/spring/cloud/auth/client/interceptor/OkHttpTokenInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="23" selection-start-line="10" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-auth/spring-cloud-auth-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-cloud-eureka/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-service/spring-cloud-service-advertising/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="208">
-            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="240">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1132,11 +1105,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-cloud-zuul</last-edited>
+          <last-edited>spring-cloud-eureka</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.29310346" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
